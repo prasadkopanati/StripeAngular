@@ -1,0 +1,28 @@
+<div class="container">
+
+  <div>
+    <h2>Welcome to BBJ Shop</h2>
+  </div>
+
+  <div class="mat-card">
+    <div class="mat-card-title">
+      1 Year Subscription: $4999.00
+    </div>
+    <div class="mat-card-content">
+
+      <p>Please make a payment by clicking button below:</p>
+
+      <h4>
+
+        <button class="payButton" (click)="checkout($event)">
+          Pay
+        </button>
+
+      </h4>
+
+    </div>
+  </div>
+
+  <div *ngIf="loading">Loading....</div>
+
+</div>
